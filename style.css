@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #563A9C;
+    color: #FFF7D1;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF7D1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.download {
+    background-color: #8B5DFF;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh; /* Altura da tela */
+}
+
+.itens-pagina-inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-pagina-inicial{
+    font-size: 50px;
+}
+
+.texto-pagina-inicial{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+
+.itens-o-projeto, .itens-comp-supri, .itens-app-plataforma{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-o-projeto, .titulo-comp-supri, .titulo-app-plataforma{
+    font-size: 30px;
+}
+
+.descricao-o-projeto, .descricao-comp-supri, .descricao-app-plataforma{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
