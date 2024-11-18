@@ -11,9 +11,18 @@
   }
 
 body{
-    background-color: #FAF7F0;
-    color: #4A4947;
+    background-image: radial-gradient(circle, #fffffe, #f5f7f5, #eaeeee, #e1e6e7, #d9dde1);
+    color: #1f1235;
     height: 100%;
+}
+
+.navbar{
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.navbar a:hover{
+    color: #2cb67d;
+    border-bottom: 1px solid #2cb67d;
 }
 
 a{
@@ -21,7 +30,7 @@ a{
 }
 
 a:visited{
-    color: #4A4947;
+    color: #1f1235;
 }
 
 section{
@@ -30,6 +39,10 @@ section{
     align-items: center;
     text-align: center;
     height: 100vh; /* Altura da tela */
+}
+
+#section1{
+    height: 90vh;
 }
 
 .itens-pagina-inicial{
@@ -77,8 +90,12 @@ section{
 }
 
 .dois{
-    background-color: #3C3D37;
+    background-image: radial-gradient(circle, #00c9b7, #16beae, #21b3a5, #29a89c, #2e9d93);
     color: #FAF7F0;
+}
+
+#tres{
+    background-image: radial-gradient(circle, #7f5af0, #7c5ae4, #7a5ad8, #775acc, #745ac0);
 }
 
 .dois a{
