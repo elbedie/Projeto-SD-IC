@@ -1,107 +1,244 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: "Poppins", sans-serif;
-  }
-
-body{
-    background-image: radial-gradient(circle, #fffffe, #f5f7f5, #eaeeee, #e1e6e7, #d9dde1);
-    color: #1f1235;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
-    border-bottom: 1px solid rgb(216, 216, 216);
+body {
+
+  background-color: #e4dec7;
+  color: #1f1235;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.navbar a:hover{
-    color: #2cb67d;
-    border-bottom: 1px solid #2cb67d;
+header {
+  background-color: rgb(247, 244, 234);
+  position: fixed;
+  width: 100%;
 }
 
-a{
-    text-decoration: none;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; /* Garantir que a navbar esteja sempre acima de outros elementos */
+  background-color: #ece9de;
 }
 
-a:visited{
-    color: #1f1235;
+.active-link {
+  color: #e9e8e3; /* Cor do texto */
+  background-color: rgb(58, 110, 165, 1); /* Cor de fundo */
+  border-radius: 10%; /* Bordas arredondadas */
 }
 
-section{
+.active-link:hover{
+  color: #e9e8e3 !important;
+}
+
+.navbar a:hover {
+  color: rgb(58,110,165,1);
+  border-bottom: 1px solid rgb(58,110,165,1);
+}
+
+a {
+  text-decoration: none;
+}
+
+#modoNoturno a:visited {
+  color: #1f1235;
+}
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh; /* Altura da tela */
+    height: 100vh; /* Usando 100% da altura da viewport */
+}
+  
+
+#section1 {
+  height: 100vh;
+  background: url(./assets/imagens/background.png), linear-gradient(to right top, #a0a0a0, #b9b9c2, #808080, #ababb1);
+  background-blend-mode: overlay; /* pra mescla cor e imagem */
+  background-size: cover;   /* Garante que a imagem ocupe toda a área disponível */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
 }
 
-#section1{
-    height: 90vh;
+
+.itens-pagina-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.itens-pagina-inicial{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.titulo-pagina-inicial {
+  font-size: 50px;
+  font-family: 'Urbanist', sans-serif;
 }
 
-.titulo-pagina-inicial{
-    font-size: 50px;
+.texto-pagina-inicial {
+  margin-top: 10px;
+  font-size: 20px;
+  width: 50%;
 }
 
-.texto-pagina-inicial{
-    margin-top: 10px;
-    font-size: 20px;
-    width: 50%;
+.itens-o-projeto,
+.itens-comp-supri,
+.itens-app-plataforma {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.itens-o-projeto, .itens-comp-supri, .itens-app-plataforma{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.titulo-o-projeto,
+.titulo-comp-supri,
+.titulo-app-plataforma {
+  font-size: 30px;
 }
 
-.titulo-o-projeto, .titulo-comp-supri, .titulo-app-plataforma{
-    font-size: 30px;
+.descricao-o-projeto,
+.descricao-comp-supri,
+.descricao-app-plataforma {
+  margin-top: 10px;
+  margin-left: 2em;
+  margin-left: 2em;
+  font-size: 20px;
+  text-align: center;
 }
 
-.descricao-o-projeto, .descricao-comp-supri, .descricao-app-plataforma{
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
+.card{
+  margin-top: 100px;
 }
 
-.col-12 img{
-    border-radius: 50%;
+.card:hover {
+  transform: translateY(-10px); /* Move o card para cima */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
 }
 
-.col-12 h3{
-    margin-top: 10px;
+/* Estilo de hover para os botões */
+.btn:hover {
+  opacity: 0.8; /* Diminui um pouco a opacidade ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.dois{
-    background-image: radial-gradient(circle, #00c9b7, #16beae, #21b3a5, #29a89c, #2e9d93);
-    color: #FAF7F0;
+/* Adicionando efeito de blur aos cards não selecionados */
+.card-blur {
+  filter: blur(4px);
+  transition: filter 0.3s ease;
 }
 
-#tres{
-    background-image: radial-gradient(circle, #7f5af0, #7c5ae4, #7a5ad8, #775acc, #745ac0);
+/* Ajustando o tamanho dos ícones do Bootstrap */
+.bi {
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
 
-.dois a{
-    color: #FAF7F0;
+
+.col-12 img {
+  border-radius: 50%;
 }
 
-.container-fluid{
-    height: 100vh;
+.col-12 h3 {
+  margin-top: 10px;
 }
+
+.dois {
+  /* background-image: radial-gradient(
+    circle,
+    #00c9b7,
+    #16beae,
+    #21b3a5,
+    #29a89c,
+    #2e9d93
+  ); */
+  background: rgb(58,110,165,1);
+  color: #faf7f0;
+}
+
+#quatro {
+  background: #ffb84d;
+  color: #faf7f0;
+}
+
+#tres {
+  /* background-image: radial-gradient(
+    circle,
+    #91f05a,
+    #7c5ae4,
+    #6d5ad8,
+    #5acc80,
+    #745ac0
+  ); */
+  background: #ff7043
+}
+
+.dois a {
+  color: #faf7f0;
+}
+
+.container-fluid {
+  height: 100vh;
+}
+
+
+
+.titulo-esquema-conceitual {
+  background-color: #ff7043;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo-img-2 {
+  height: 150px;
+  width: 150px;
+}
+
+.footer-container {
+  background-color: #e4dec7;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  color: #cf5e3c;
+  border-bottom: 1px solid #ff7043;
+}
+
+.img-fluid-dois{
+  width: 150px;
+  height: 150px;
+}
+
+.descricao-o-projeto p, .descricao-comp-supri p {
+  width: 90%;
+  text-align: justify;
+  margin-left: 2em;
+}
+
+
