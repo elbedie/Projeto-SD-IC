@@ -119,7 +119,7 @@ function confirmarDownload(event) {
 
   // Se o usuário confirmar, segue o link
   if (confirmar) {
-    window.location.href = "/assets/downloads/SIMC.zip";  // Redireciona para o download
+    window.location.href = "https://elbedie.github.io/Projeto-SD-IC/assets/downloads/SIMC.zip";  // Redireciona para o download
   }
 }
 
