@@ -136,3 +136,16 @@ function applyBlur(clickedCard) {
     }
   });
 }
+
+// Função para alterar a cor da navbar ao rolar
+window.addEventListener('scroll', function() {
+  let navbar = document.getElementById('navbar');
+  let homeSection = document.getElementById('section1'); // A seção com id 'home'
+  
+  // Verifica se a rolagem passou da altura da seção "Home"
+  if (window.scrollY > homeSection.offsetTop) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});

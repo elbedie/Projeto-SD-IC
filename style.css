@@ -17,6 +17,7 @@ body {
   color: #1f1235;
   height: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 header {
@@ -30,8 +31,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1050; /* Garantir que a navbar esteja sempre acima de outros elementos */
-  background-color: #ece9de;
+  z-index: 10; /* Navbar fica sobre os outros elementos */
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: #e4e1d3; /* Cor que você deseja quando sair da seção "Home" */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar efeito de destaque */
+
 }
 
 .active-link {
@@ -85,7 +92,7 @@ section {
 }
 
 .titulo-pagina-inicial h1, .titulo-o-projeto h1, .row h1{
-  font-size: 100px;
+  font-size: 50px;
   font-family: "Londrina Solid", sans-serif;
   margin-bottom: 10px;
 }
@@ -118,6 +125,7 @@ section {
 
 .card{
   margin-top: 100px;
+  position: static;
 }
 
 .card:hover {
@@ -179,7 +187,10 @@ section {
     #5acc80,
     #745ac0
   ); */
-  background: #ff7043
+  background: url(./assets/imagens/background.png), linear-gradient(to right top, #a0a0a0, #b9b9c2, #808080, #ababb1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dois a {
@@ -237,4 +248,14 @@ section {
   margin-left: 2em;
 }
 
+.fs-5{
+  font-family: "Londrina Solid", sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ff7043;
+}
 
+.col-12 iframe{
+  padding: 20px;
+  background-color: rgb(58,110,165,1);
+}
