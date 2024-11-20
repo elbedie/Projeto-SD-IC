@@ -9,6 +9,24 @@
   border: none;
   outline: none;
   font-family: 'Poppins', sans-serif;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #e4dec7;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff7043;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
 body {
