@@ -12,6 +12,7 @@
   
 }
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -276,4 +277,77 @@ section {
 .col-12 iframe{
   padding: 20px;
   background-color: rgb(58,110,165,1);
+}
+
+.titulo-mobile{
+  display: none;
+}
+
+footer{
+  margin-top: 100px;
+}
+
+
+@media (max-width: 599px) {
+
+    section{
+      height: 100vh;
+    }
+
+    #home{
+      height: 50%;
+      margin-top: 100px;
+    }
+    .texto-pagina-inicial{
+      width: 100%;
+    }
+
+    #projeto {
+      height: auto;
+      margin-top: 0;
+    }
+
+    .titulo-o-projeto{
+      margin-top: 50px;
+    }
+    
+    .descricao-o-projeto, .descricao-comp-supri {
+      width: 100%; /* Ajusta a largura para ocupar toda a tela */
+      height: auto; /* Ajusta a altura automaticamente para o conteúdo */
+      box-sizing: border-box; /* Evita que o padding aumente o tamanho total */
+      font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+      text-align: center; /* Alinha o texto ao centro */
+      padding-right: 100px;
+    }
+
+    #quatro{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .imagem-esquema-conceitual{
+    width: 100%; /* A imagem vai ocupar 100% da largura em dispositivos móveis */
+    height: auto; /* A altura se ajusta automaticamente para manter a proporção */
+
+  }
+
+  .titulo-mobile{
+    display: block;
+    margin-top: 800px;
+    color: #1f1235;
+  }
+
+  .card-text{
+    display: none;
+  }
+
+  .fs-5{
+    margin: 20px;
+  }
+
+  footer{
+    margin-top: 700px;
+  }
+  
 }

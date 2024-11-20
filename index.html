@@ -69,15 +69,11 @@
 
     <section class="container-fluid d-flex align-items-center" id="section1">
       <div class="row">
-        <div class="col-12 itens-pagina-inicial" id="home">
-          <div class="">
-            <!-- Logo ao lado do título -->
+        <div class="col-12 col-sm-6 col-md-12 itens-pagina-inicial" id="home">
             <div class="titulo-pagina-inicial">
               <h1></h1>
             </div>
-          </div>
           <div class="texto-pagina-inicial">
-            <!-- Texto aqui -->
           </div>
         </div>
       </div>
@@ -87,13 +83,14 @@
     <section>
       <div
         class="container-fluid dois d-flex align-items-center justify-content-center"
-        id="dois"
-      >
+        id="dois">
         <div class="row" id="projeto">
-          <div class="titulo-o-projeto">
+          <div class="col-12">
+            <div class="titulo-o-projeto">
             <h1>SOBRE O PROJETO</h1>
           </div>
           <div class="descricao-o-projeto"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -121,7 +118,7 @@
             </p>
           </div>
           <div class="imagem-esquema-conceitual">
-            <img src="./assets/imagens/arduino.jpg" alt="Esquema Conceitual" class="img-fluid-arduino" style="width: 1000px; border: 2px solid #973f24;
+            <img src="./assets/imagens/arduino.jpg" alt="Esquema Conceitual" class="img-fluid-arduino" style="max-width: 100%; height: auto; border-radius: 20px; border: 2px solid #973f24;
             border-radius: 15px;">
           </div>
         </div>
@@ -165,10 +162,13 @@
     
     <section>
       <div class="container-fluid dois d-flex align-items-center justify-content-center" id="tres">
-        <div class="row">
+        <div class="row" id="cards">
+          <h1 class="container titulo-mobile text-center" style="font-size: 60px;">Autores</h1>
           <!-- Diego Xavier -->
           <div class="col-12 col-md-4 d-flex flex-column align-items-center gap-2 mb-4">
-            <div class="card shadow-lg p-3 rounded-3" style="width: 100%; background-color: #ff7043; transition: transform 0.3s ease;" onclick="applyBlur(this)">
+            <div class="col-12">
+            </div>
+            <div class="card shadow-lg p-3 rounded-3" style="width: 100%; background-color: #ff7043; transition: transform 0.3s ease;" onclick="applyBlur(this)" id="card-diego">
               <h1>Diego Xavier</h1>
               <img src="./assets/imagens/diego.png" alt="Diego" class="card-img-top rounded-circle img-fluid-dois mx-auto d-block" style="width: 150px; height: 150px; object-fit: cover;" />
               <div class="card-body text-center">
